@@ -6,15 +6,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var WelcomeComponent = (function () {
-    function WelcomeComponent() {
+var PortfolioComponent = (function () {
+    function PortfolioComponent() {
     }
-    return WelcomeComponent;
+    return PortfolioComponent;
 }());
-WelcomeComponent = __decorate([
+PortfolioComponent = __decorate([
     core_1.Component({
-        templateUrl: 'app/home/welcome.component.html'
+        templateUrl: 'app/portfolio/portfolio.component.html'
     })
-], WelcomeComponent);
-exports.WelcomeComponent = WelcomeComponent;
-//# sourceMappingURL=welcome.component.js.map
+], PortfolioComponent);
+exports.PortfolioComponent = PortfolioComponent;
+//# sourceMappingURL=portfolio.component.js.map

@@ -11,8 +11,11 @@
                 <li class="hidden">
                     <a href="#page-top"></a>
                 </li>
+                  <li class="page-scroll">
+                     <a [routerLink]="['./home']">Home</a>
+                </li>
                 <li class="page-scroll">
-                    <a [routerLink]="['/welcome']">Portfolio</a>
+                    <a [routerLink]="['/portfolio']">Portfolio</a>
                 </li>
                 <li class="page-scroll">
                     <a [routerLink]="['/about']">About</a>
@@ -24,21 +27,6 @@
         </div>
     </div>
 </nav>
-<!-- Header -->
-<header>
-    <div class="container" id="maincontent" tabindex="-1">
-        <div class="row">
-            <div class="col-lg-12">
-                <img class="img-responsive" src="img/profile.png" alt="">
-                <div class="intro-text">
-                    <h1 class="name">Jessanth Sam Charles</h1>
-                    <hr class="star-light">
-                    <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
 <router-outlet></router-outlet>
 <!-- Footer -->
 <footer class="text-center">

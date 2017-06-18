@@ -9,7 +9,8 @@ var core_1 = require("@angular/core");
 var forms_1 = require("@angular/forms");
 var http_1 = require("@angular/http");
 var platform_browser_1 = require("@angular/platform-browser");
-var welcome_component_1 = require("./home/welcome.component");
+var home_component_1 = require("./home/home.component");
+var portfolio_component_1 = require("./portfolio/portfolio.component");
 var about_component_1 = require("./about/about.component");
 var contact_component_1 = require("./contact/contact.component");
 var app_component_1 = require("./app.component");
@@ -26,7 +27,13 @@ AppModule = __decorate([
             http_1.HttpModule,
             router_1.RouterModule.forRoot([
                 {
-                    path: 'welcome', component: welcome_component_1.WelcomeComponent
+                    path: '', redirectTo: '/home', pathMatch: 'full'
+                },
+                {
+                    path: 'home', component: home_component_1.HomeComponent
+                },
+                {
+                    path: 'portfolio', component: portfolio_component_1.PortfolioComponent
                 },
                 {
                     path: 'about', component: about_component_1.AboutComponent
@@ -36,7 +43,7 @@ AppModule = __decorate([
                 }
             ]),
         ],
-        declarations: [app_component_1.AppComponent, welcome_component_1.WelcomeComponent, about_component_1.AboutComponent, contact_component_1.ContactComponent],
+        declarations: [app_component_1.AppComponent, portfolio_component_1.PortfolioComponent, home_component_1.HomeComponent, about_component_1.AboutComponent, contact_component_1.ContactComponent],
         bootstrap: [app_component_1.AppComponent],
     })
 ], AppModule);
